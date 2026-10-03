@@ -61,6 +61,7 @@ target-version = "py313"
 ignore = [
   'B006', # Learn Python yo!
   'C408',  # Unnecessary dict/list call
+  "COM812",
   'COM819',  # Trailing commas is da bomb
   'E731',  # Do not assign to lambda
   'ERA001', 'T201', # comment code, prints are lax during development
