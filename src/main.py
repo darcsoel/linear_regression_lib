@@ -36,7 +36,7 @@ class LinearRergession:
 
     def _find_m(self) -> Self:
         s = 0
-        for x, y in zip(self._x, self._y, strict=False):
+        for x, y in zip(self._x, self._y, strict=True):
             s += x * y
 
         n = len(self._x)
