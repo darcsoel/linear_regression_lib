@@ -63,7 +63,7 @@ class LinearRergession:
 
         return self._m, self._b
 
-    def get_coeficients(self):
+    def get_coeficients(self) -> tuple[float | None, float | None]:
         return self._m, self._b
 
 
@@ -72,7 +72,7 @@ def predict(x: int, m: float, b: float) -> int | float:
 
 
 if __name__ == "__main__":
-    data = generate_test_data(1000)
+    data: tuple[list[int], list[int]] = generate_test_data(1000)
 
     model = LinearRergession(data[0], data[1])
     m, b = model.train()
